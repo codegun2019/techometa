@@ -2,6 +2,11 @@
   <div class="container">
     <img :src="logo" alt="Logo" class="logo" />
   </div>
+  <div class="container">
+    <button class="shiny-cta">
+      <span>Welcome</span>
+    </button>
+  </div>
 </template>
 
 <script lang="ts" setup>
