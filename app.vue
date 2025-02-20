@@ -1,13 +1,27 @@
 <template>
   <div>
+    <!-- DBD -->
+      <div class="container">
+      <div id="Certificate-banners"></div>
+        <slot />
+      </div>
     <!-- แทนที่ NuxtWelcome ด้วย Layout และ NuxtPage -->
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
+
   </div>
 </template>
 <script setup>
-
+useHead({
+  script: [
+    {
+      id: "dbd-init",
+      src: "https://www.trustmarkthai.com/callbackData/initialize.js?t=ab78a794-25-6-5155ce08baaeaaee4133568bdc4c08c90ff14a",
+      async: true
+    }
+  ]
+})
 </script>
 
 <style>
